@@ -263,10 +263,10 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(252, 311);
+            this.button19.Location = new System.Drawing.Point(238, 311);
             this.button19.Margin = new System.Windows.Forms.Padding(4);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(165, 42);
+            this.button19.Size = new System.Drawing.Size(179, 42);
             this.button19.TabIndex = 19;
             this.button19.Text = "=";
             this.button19.UseVisualStyleBackColor = true;

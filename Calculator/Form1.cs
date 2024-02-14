@@ -97,21 +97,49 @@ namespace Calculator
             switch (count)
             {
                 case 1:
-                    b = a + float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    if (b == null)
+                    {
+                        b = a + float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введите второе число");
+                    }
                     break;
 
                 case 2:
-                    b = a - float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    if (b == null)
+                    {
+                        b = a - float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введите второе число");
+                    }
                     break;
                 case 3:
-                    b = a * float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    if (b == null)
+                    {
+                        b = a * float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введите второе число");
+                    }
                     break;
                 case 4:
-                    b = a / float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
+                    if (b == null)
+                    {
+                        b = a / float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введите второе число");
+                    }
                     break;
 
                 default:
@@ -122,40 +150,67 @@ namespace Calculator
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 1;
-            label1.Text = a.ToString() + "+";
-            znak = true;
-
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Введите число");
+            }
+            else
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 1;
+                label1.Text = a.ToString() + "+";
+                znak = true;
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 2;
-            label1.Text = a.ToString() + "-";
-            znak = true;
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Введите число");
+            }
+            else
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 2;
+                label1.Text = a.ToString() + "-";
+                znak = true;
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 3;
-            label1.Text = a.ToString() + "*";
-            znak = true;
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Введите число");
+            }
+            else
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 3;
+                label1.Text = a.ToString() + "*";
+                znak = true;
+            }
+
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 4;
-            label1.Text = a.ToString() + "/";
-            znak = true;
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Введите число");
+            }
+            else
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 4;
+                label1.Text = a.ToString() + "/";
+                znak = true;
+            }
         }
 
         private void button19_Click(object sender, EventArgs e)
