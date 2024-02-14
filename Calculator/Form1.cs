@@ -172,6 +172,12 @@ namespace Calculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.BackColor = ColorTranslator.FromHtml("#FFD25A");
+            this.Text = "Calculator Kubasov`s edition";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
